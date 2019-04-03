@@ -1,0 +1,6 @@
+logs/
+.ipynb_checkpoints
+readonly/
+tensorboard_logs
+images/
+__pycache__

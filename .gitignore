@@ -4,3 +4,6 @@ readonly/
 tensorboard_logs
 images/
 __pycache__
+.idea
+tensorflow-*/
+*.tar.gz

@@ -38,6 +38,7 @@ export TF_CUDA_COMPUTE_CAPABILITIES=3.5,3.7,5.0,5.2,5.3,6.0,6.1,6.2,7.0,7.2,7.5
 pkgver=1.13.1
 
 wget https://github.com/tensorflow/tensorflow/archive/v${pkgver}.tar.gz
+tar -xvzf v${pkgver}.tar.gz
 
 patch -d tensorflow-${pkgver} -Np1 -i "$(pwd)/protobuf_temp_fix_cuda10.1_apply.patch"
 cp "$(pwd)/protobuf_temp_fix_cuda10.1.patch" tensorflow-${pkgver}/third_party/
